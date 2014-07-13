@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+	<head>
+		<title>peter george egan</title>
+		<link rel="stylesheet" type="text/css" href="style1.css">
+		<script type="text/javascript"></script>
+	</head>
+	<body class="email">
+		<div>
+			<header class="top">
+				<h1>Peter George Egan</h1>
+				<h2 class="bio">
+					Dedicated problem-solver, passionate learner and developer of the web. No mountain to high, no ocean to deep. I dare you to challenge me.
+				</h2>
+			</header>
+			<ul class="services">
+				<li class="service twitter">
+					<a href="http://www.twitter.com/pgegan">Twitter</a>
+				</li>
+				<li class="service github">
+					<a href="http://www.github.com/eganpg">GitHub</a>
+				</li>
+				<li class="service skype">
+					<a href="eganpg/skype">Skype</a>
+				</li>
+				<li class="service email">
+					<a href="mailto:eganpg@gmail.com">Email</a>
+				</li>
+				<li class="service linkedin">
+					<a href="http://www.linkedin.com/eganpg">Linkedin</a>
+				</li>
+			</ul>
+		</div>
+		<script>
+
+            var services = document.getElementsByClassName('service'),
+                len = services.length;
+                
+            while(len--) {
+                var me = services[len];
+                
+                me.addEventListener('mouseover', function(event) {
+                    document.body.className = this.className.replace('service ', '');
+                }, false);
+            }
+        
+		</script>
+	</body>
+</html>
